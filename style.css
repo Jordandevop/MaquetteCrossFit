@@ -1,0 +1,77 @@
+header {
+    background-image: url('images/crossfit.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+.link-nav {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    margin-left: 24px;
+    font-size: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 10px 20px;
+
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 24px;
+    border-radius: 24px;
+    padding: 0 20px;
+    background: #d2d2d2;
+}
+
+.search-box:hover {
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 0 15px;
+    background-color: transparent;
+}
+
+.fa-bars {
+    color: #ff9900;
+    font-size: 32px;
+}
+
+.search-icon {
+    color: #ff9900;
+}
