@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Bungee&family=Rhodium+Libre&display=swap');
+
+
 header {
     background-image: url('images/crossfit.png');
     background-size: cover;
@@ -19,7 +22,7 @@ header {
     padding-top: 16px;
 }
 
-.link-nav {
+.link-nav ul {
     display: flex;
     list-style: none;
     gap: 12px;
@@ -74,4 +77,359 @@ header {
 
 .search-icon {
     color: #ff9900;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.hero .overlay {
+    text-align: center;
+    color: white;
+    background: transparent;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleTitle {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ff9900;
+
+
+}
+
+.hero .subtitle {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+    background-color: #ff9900;
+    letter-spacing: 10%;
+}
+
+.heroText {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.hero .hero-buttons {
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 0 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s;
+    width: 272px;
+    height: 64px;
+}
+
+.btn.primary {
+    background: orange;
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.btn.secondary {
+    border: 2px solid orange;
+    color: orange;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.btn.primary:hover {
+    background: darkorange;
+}
+
+.btn.secondary:hover {
+    background: orange;
+    color: white;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #f39c12;
+}
+
+.social-sidebar {
+    position: fixed;
+    right: 0;
+    top: 100%;
+    transform: translateY(-100%);
+    background: #f39c12;
+    padding: 15px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top-left-radius: 27px;
+    border-bottom-left-radius: 27px;
+}
+
+.social-sidebar a {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.social-sidebar a:hover {
+    transform: scale(1.2);
+}
+
+.welcome {
+    padding: 80px 50px;
+    background: #d2d2d2;
+}
+
+.welcome h2 {
+    text-align: center;
+    font-size: 64px;
+    font-family: "bungee", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.welcome h3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 64px;
+    font-family: "bungee", sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+}
+
+.image-box {
+    width: 503px;
+    height: 498px;
+    background: black;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0%, 52% 100%, 0% 100%);
+}
+
+.orange-stripe {
+    position: absolute;
+    width: 272px;
+    height: 335px;
+    background: #f39c12;
+    left: 160px;
+    bottom: 0px;
+    clip-path: polygon(100% 0, 82% 0, 35% 100%, 54% 100%);
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-title {
+    color: #f39c12;
+    font-size: 36px;
+    font-family: "Actor", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-content p {
+    margin-bottom: 15px;
+    font-family: "Rhodium Libre", serif;
+    font-size: 26px;
+    color: black;
+}
+
+.text-content ul {
+    list-style: none;
+    margin: 20px 0;
+
+}
+
+.text-content li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    font-family: "Rhodium Libre", serif;
+    font-size: 26px;
+    color: black;
+}
+
+.text-content li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+}
+
+.btn-services {
+    background: #f39c12;
+    color: white;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 32px;
+    font-family: "Rhodium Libre", serif;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s;
+    max-width: 80%;
+}
+
+.btn-services:hover {
+    background: #e67e22;
+    transform: translateY(-3px);
+}
+
+.askUs {
+    background: #1a1a1a;
+    padding: 80px 50px;
+    position: relative;
+    height: 616px;
+}
+
+.askUs-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+}
+
+.stats-container {
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.stat-item {
+    color: white;
+    text-align: left;
+}
+
+.stat-number {
+    font-size: 64px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.stat-label {
+    font-size: 36px;
+    font-family: "Actor", sans-serif;
+    color: #d2d2d2;
+    letter-spacing: 2px;
+}
+
+.orange-box {
+    background: #ff9900;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    clip-path: polygon(100% 0, 0 1%, 46% 100%, 100% 100%);
+    height: 632px;
+}
+
+.orange-box h2 {
+    font-size: 64px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.orange-box p {
+    font-size: 32px;
+    font-family: "Rhodium Libre", serif;
+    color: white;
+    margin-bottom: 40px;
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.contact-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-family: "Actor", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-btn:hover {
+    background: white;
+    color: #ff9900;
+    transform: translateY(-3px);
+}
+
+.trainers {
+    background: #d2d2d2;
+    padding: 100px 50px;
 }
