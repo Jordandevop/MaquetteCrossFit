@@ -160,7 +160,6 @@ header {
     color: white;
     font-size: 2rem;
     font-weight: 400;
-    line-height: 44px;
 }
 
 .btn.secondary {
@@ -168,7 +167,6 @@ header {
     color: orange;
     font-size: 2rem;
     font-weight: 400;
-    line-height: 44px;
 }
 
 .btn.primary:hover {
@@ -713,4 +711,356 @@ header {
     font-family: "Actor", sans-serif;
     margin-bottom: 10px;
     color: black;
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 768px) {
+
+    /* HEADER MOBILE - MENU BURGER */
+    .header-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        padding-top: 20px;
+        position: relative;
+    }
+
+    .link-nav {
+        display: none;
+        /* Cache la nav par défaut */
+    }
+
+    .link-nav.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .link-nav ul {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 1.25rem;
+        margin-left: 0;
+        background: transparent;
+        padding: 0;
+    }
+
+    .link-nav li {
+        color: #000;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .link-nav li:last-child {
+        border-bottom: none;
+    }
+
+    /* Style du bouton burger */
+    .fa-bars {
+        font-size: 1.75rem;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .search-container {
+        width: auto;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    /* SUPPRESSION DES POLYGONES */
+    .image-box {
+        clip-path: none;
+        border-radius: 12px;
+    }
+
+    .orange-stripe {
+        display: none;
+    }
+
+    .orange-box {
+        clip-path: none;
+        border-radius: 12px;
+    }
+
+    .orangeBadge {
+        clip-path: none;
+        border-radius: 0 0 12px 12px;
+        height: 120px;
+    }
+
+    /* HERO MOBILE */
+    .hero h1 {
+        font-size: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .circleTitle {
+        width: 20px;
+        height: 20px;
+        margin: 4px;
+    }
+
+    .hero .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .heroText {
+        font-size: 1.125rem;
+        line-height: 1.4;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 250px;
+        height: 50px;
+        font-size: 1.25rem;
+        margin: 5px 0;
+    }
+
+    /* WELCOME SECTION MOBILE */
+    .welcome {
+        padding: 40px 20px;
+    }
+
+    .welcomeTitle {
+        margin-bottom: 20px;
+    }
+
+    .welcome h2,
+    .welcome h3 {
+        font-size: 1.25rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image-container {
+        display: none !important;
+    }
+
+    .text-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-content p,
+    .text-content li {
+        font-size: 1.125rem;
+    }
+
+    .btn-services {
+        font-size: 1.25rem;
+        padding: 10px 30px;
+    }
+
+    /* ASK US SECTION MOBILE */
+    .askUs {
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .askUs-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .stats-container {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .stat-number {
+        font-size: 2.625rem;
+    }
+
+    .stat-label {
+        font-size: 1.5rem;
+    }
+
+    .orange-box {
+        padding: 40px 30px;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .orange-box h2 {
+        font-size: 2.625rem;
+    }
+
+    .orange-box p {
+        font-size: 1.5rem;
+    }
+
+    /* TRAINERS SECTION MOBILE */
+    .trainers {
+        padding: 40px 20px;
+    }
+
+    .trainers h2,
+    .trainers h3 {
+        font-size: 2rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cardCoach {
+        width: 100%;
+        max-width: 300px;
+        height: 450px;
+    }
+
+    .cardCoach img {
+        width: 200px;
+        max-height: 300px;
+    }
+
+    .orangeBadge h4 {
+        font-size: 2rem;
+    }
+
+    /* PROGRAMMES SECTION MOBILE */
+    .programmes {
+        grid-template-columns: 1fr;
+    }
+
+    .leftProg,
+    .centerProg,
+    .rightProg {
+        font-size: 1.5rem;
+        padding: 30px 15px;
+        min-height: 150px;
+    }
+
+    /* CLIENT SECTION MOBILE */
+    .client {
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+
+    .client .image-container {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .image-box {
+        width: 100%;
+        max-width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    .text-rotated {
+        font-size: 2rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        /* Texte droit */
+        white-space: normal;
+        text-align: center;
+    }
+
+    .client .image-container img {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 200px;
+        height: 200px;
+        margin: -50px auto 0;
+        display: block;
+    }
+
+    .clientText {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.125rem;
+    }
+
+    #clientName,
+    #clientJob {
+        font-size: 1.5rem;
+    }
+
+    /* LOGO SECTION MOBILE */
+    .logo {
+        width: 90%;
+        height: 150px;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 0;
+    }
+
+    .logo p {
+        font-size: 1.5rem;
+    }
+
+    /* FOOTER MOBILE */
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .leftFooter,
+    .centerFooter,
+    .rightFooter {
+        max-width: 100%;
+    }
+
+    .leftFooter h4,
+    .centerFooter h4,
+    .rightFooter h4 {
+        font-size: 2rem;
+        white-space: normal;
+    }
+
+    .leftFooter p {
+        font-size: 1rem;
+    }
+
+    .centerFooter li,
+    .rightFooter li {
+        font-size: 1.125rem;
+    }
+
+    /* SOCIAL SIDEBAR MOBILE */
+    .social-sidebar {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .social-sidebar a {
+        font-size: 1rem;
+    }
+
+    /* SLIDER DOTS MOBILE */
+    .slider-dots {
+        bottom: 20px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
 }
