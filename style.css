@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Actor&family=Bungee&family=Rhodium+Libre&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
 
 header {
     background-image: url('images/crossfit.png');
@@ -31,7 +40,7 @@ header {
     margin: 0;
     color: #ffffff;
     margin-left: 24px;
-    font-size: 32px;
+    font-size: 2rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -65,14 +74,14 @@ header {
     flex: 1;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0 15px;
     background-color: transparent;
 }
 
 .fa-bars {
     color: #ff9900;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .search-icon {
@@ -96,7 +105,7 @@ header {
 }
 
 .hero h1 {
-    font-size: 64px;
+    font-size: 4rem;
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -117,7 +126,7 @@ header {
 }
 
 .hero .subtitle {
-    font-size: 36px;
+    font-size: 2.25rem;
     color: white;
     margin-bottom: 10px;
     background-color: #ff9900;
@@ -125,7 +134,7 @@ header {
 }
 
 .heroText {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 44px;
 }
@@ -149,7 +158,7 @@ header {
 .btn.primary {
     background: orange;
     color: white;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 44px;
 }
@@ -157,7 +166,7 @@ header {
 .btn.secondary {
     border: 2px solid orange;
     color: orange;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 44px;
 }
@@ -208,7 +217,7 @@ header {
 
 .social-sidebar a {
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: transform 0.3s;
 }
 
@@ -228,7 +237,7 @@ header {
 
 .welcome h2 {
     text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     font-family: "bungee", sans-serif;
     font-weight: 400;
     margin-bottom: 10px;
@@ -239,7 +248,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 64px;
+    font-size: 4rem;
     font-family: "bungee", sans-serif;
     font-weight: 400;
 }
@@ -286,7 +295,7 @@ header {
 
 .about-title {
     color: #f39c12;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Actor", sans-serif;
     margin-bottom: 20px;
     text-align: center;
@@ -295,7 +304,7 @@ header {
 .text-content p {
     margin-bottom: 15px;
     font-family: "Rhodium Libre", serif;
-    font-size: 26px;
+    font-size: 1.625rem;
     color: black;
 }
 
@@ -310,7 +319,7 @@ header {
     margin-bottom: 10px;
     position: relative;
     font-family: "Rhodium Libre", serif;
-    font-size: 26px;
+    font-size: 1.625rem;
     color: black;
 }
 
@@ -326,7 +335,7 @@ header {
     padding: 12px 50px;
     border: none;
     border-radius: 30px;
-    font-size: 32px;
+    font-size: 2rem;
     font-family: "Rhodium Libre", serif;
     text-align: center;
     cursor: pointer;
@@ -370,7 +379,7 @@ header {
 }
 
 .stat-number {
-    font-size: 64px;
+    font-size: 4rem;
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     margin-bottom: 10px;
@@ -378,7 +387,7 @@ header {
 }
 
 .stat-label {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Actor", sans-serif;
     color: #d2d2d2;
     letter-spacing: 2px;
@@ -397,7 +406,7 @@ header {
 }
 
 .orange-box h2 {
-    font-size: 64px;
+    font-size: 4rem;
     font-family: "Bungee", sans-serif;
     font-weight: 400;
     color: white;
@@ -406,7 +415,7 @@ header {
 }
 
 .orange-box p {
-    font-size: 32px;
+    font-size: 2rem;
     font-family: "Rhodium Libre", serif;
     color: white;
     margin-bottom: 40px;
@@ -420,7 +429,7 @@ header {
     border: 2px solid white;
     padding: 15px 50px;
     border-radius: 50px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Actor", sans-serif;
     cursor: pointer;
     transition: all 0.3s;
@@ -443,7 +452,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     font-family: "bungee", sans-serif;
     font-weight: 400;
 }
@@ -454,7 +463,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     font-family: "bungee", sans-serif;
     font-weight: 400;
 
@@ -511,14 +520,14 @@ header {
 
 .orangeBadge h4 {
     color: black;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Bungee", sans-serif;
     padding-top: 10px;
 }
 
 .orangeBadge p {
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Actor", sans-serif;
 }
 
@@ -531,7 +540,7 @@ header {
 .leftProg {
     background-color: #ff9900;
     color: #ffffff;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Bungee", sans-serif;
     display: flex;
     align-items: center;
@@ -544,7 +553,7 @@ header {
 .centerProg {
     background-color: black;
     color: #ffffff;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Bungee", sans-serif;
     display: flex;
     align-items: center;
@@ -557,7 +566,7 @@ header {
 .rightProg {
     background-color: #ff9900;
     color: #ffffff;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Bungee", sans-serif;
     display: flex;
     align-items: center;
@@ -571,15 +580,16 @@ header {
     padding: 80px 50px;
     background: #d2d2d2;
     display: flex;
+    position: relative;
+    z-index: 1;
 }
 
 .text-rotated {
     color: white;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Bungee", sans-serif;
     transform: rotate(-90deg);
     color: white;
-    font-size: 64px;
     font-family: "Bungee", sans-serif;
     transform: rotate(-90deg);
     white-space: nowrap;
@@ -607,7 +617,7 @@ header {
 .clientText {
     display: flex;
     justify-content: center;
-    font-size: 32px;
+    font-size: 2rem;
     font-family: "Rhodium Libre", serif;
     flex-direction: column;
     gap: 20px;
@@ -617,11 +627,90 @@ header {
 #clientName {
     color: #ff9900;
     font-family: "Actor", sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     padding-top: 40px;
 }
 
 #clientJob {
     font-family: "Actor", sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
+}
+
+.logo {
+    background-color: #ff9900;
+    width: 1192px;
+    height: 258px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    margin-top: -47px;
+}
+
+.logo p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: "Bungee", sans-serif;
+}
+
+
+.logo p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: "Bungee", sans-serif;
+}
+
+.footer {
+    background-color: #d2d2d2;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 295px 50px 80px;
+    gap: 60px;
+}
+
+.leftFooter,
+.centerFooter,
+.rightFooter {
+    flex: 1;
+    max-width: 300px;
+}
+
+.leftFooter h4,
+.centerFooter h4,
+.rightFooter h4 {
+    font-size: 3rem;
+    font-family: "Bungee", sans-serif;
+    color: #000;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.leftFooter p {
+    font-size: 1.25rem;
+    font-family: "Rhodium Libre", serif;
+    line-height: 31px;
+}
+
+.centerFooter ul,
+.rightFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.centerFooter li,
+.rightFooter li {
+    font-size: 1.25rem;
+    font-family: "Actor", sans-serif;
+    margin-bottom: 10px;
+    color: black;
 }
